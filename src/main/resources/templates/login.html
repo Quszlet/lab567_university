@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Login Custom</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div>
+    <header>
+        <img th:src="@{/images/logo.png}" id="logo" width="140px" height="140px">
+        <span id="text_logo">Московский Государственный Университет</span>
+        <button id="per_cabinet">Личный кабинет</button>
+    </header>
+</div>
+<form id="form_login" method="post" action="/auth/login">
+    <div id="text_login_0">Вход в личный кабинет</div>
+    <div id="text_login_1">Заполните поля для входа</div>
+    <input name="username" id="username" placeholder="Логин">
+    <span name="login_span">Введите логин</span>
+    <input name="password" id="password" placeholder="Пароль">
+    <span name="login_span">Введите пароль</span>
+    <button type="submit" id="button_login">Войти</button>
+    <!--<button type="button" id="button_to_regist" onclick="Switch_login_regist('regist')">Зарегистрироваться</button>
+</form>-->
+<!--<form id="form_regist">
+    <div id="text_regist">Регистрация</div>
+    <div id="access_regist">Пользователь зарегистрирован</div>
+    <input name="type_login" placeholder="Логин">
+    <span name="registration">Введите логин</span>
+    <input name="type_name" placeholder="Имя">
+    <span name="registration">Введите имя</span>
+    <input name="type_surname" placeholder="Фамилия">
+    <span name="registration">Введите фамилию</span>
+    <input name="type_password" placeholder="Пароль">
+    <span name="registration">Введите пароль</span>
+    <input name="confirm_password" placeholder="Подтверждение пароля">
+    <span name="registration">Подтвердите пароль</span>
+    <input name="type_email" placeholder="Email">
+    <span name="registration">Введите email</span>
+    <button type="submit" id="button_regist" onclick="Registration()">Зарегистрироваться</button>
+    <button type="button" id="button_to_login" onclick="Switch_login_regist('login')">Вход</button>
+</form>-->
+<div id="footer">
+    <div id="footer_flex">
+        <div>&copy; 21ВП2 Изгарев Владислав & Копылов Егор</div>
+        <div>МГУ</div>
+    </div>
+</div>
+</body>
+<script th:src="@{/JavaScript/SendForm.js}"></script>
+<script th:src="@{/JavaScript/SwitchLoginRegist.js}"></script>
+<script th:src="@{/JavaScript/Form.js}"></script>
+</html>
