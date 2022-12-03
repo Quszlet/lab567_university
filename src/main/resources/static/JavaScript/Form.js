@@ -3,16 +3,6 @@ async function Registration(){
     var formElem = document.getElementById("form_regist");
     var span = document.getElementsByName("registration");
     let height_form =  465;
-    for (let i = 0; i < span.length; i++){
-
-        if (formElem[i].value === ""){
-            span[i].style.display = "block";
-            formElem.style.height =  `${height_form += 10}px`;
-        } else {
-            span[i].style.display = "none";
-            formElem.style.height =  `${height_form}px`;
-        }
-    }
 
     
     formElem.onsubmit = async (e) => {

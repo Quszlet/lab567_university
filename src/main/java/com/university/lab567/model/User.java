@@ -1,9 +1,12 @@
 package com.university.lab567.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
@@ -26,4 +29,6 @@ public class User {
     @Enumerated(value = EnumType.STRING)
     @Column(name = "status")
     private Status status;
+    @Column(name = "count")
+    private int count;
 }
